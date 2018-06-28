@@ -19,8 +19,9 @@ Packaged server file (``server.xml``) deployments can be pushed and handled by t
 > .liberty/create_vars.rb wlp/usr/servers/defaultServer/runtime-vars.xml && \
   .liberty/calculate_memory.rb && \
   WLP_SKIP_MAXPERMSIZE=true \
-  JAVA_HOME="$PWD/.java" WLP_USER_DIR="$PWD/wlp/usr" exec .liberty/bin/server run
-                   defaultServer
+  JAVA_HOME="$PWD/.java" \
+  WLP_USER_DIR="$PWD/wlp/usr" \
+  exec .liberty/bin/server run defaultServer
 ```
 
 ## References
